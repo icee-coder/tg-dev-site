@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Создание Telegram-ботов, интеграций и IT-решений под ключ. Автоматизация, CRM, парсеры, Telegram Mini Apps. Гарантия результата. Быстрый запуск." />
+    <title>Telegram-боты и IT-решения под ключ — TG DEV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #000;
+        overflow-x: hidden;
+      }
+      .glass {
+        backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        opacity: 0.15;
+        z-index: -2;
+      }
+      .tilt:hover {
+        transform: perspective(800px) rotateX(5deg) rotateY(5deg) scale(1.02);
+        transition: transform 0.4s ease;
+      }
+      header {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans relative">
+    <div id="particles-js" class="fixed top-0 left-0 w-full h-full -z-10"></div>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 px-6 py-4 flex justify-between items-center border-b border-gray-800">
+      <div class="text-purple-400 font-bold text-xl">TG DEV</div>
+      <nav class="space-x-4 text-gray-300 text-sm">
+        <a href="#about" class="hover:text-white">Обо мне</a>
+        <a href="#services" class="hover:text-white">Услуги</a>
+        <a href="#portfolio" class="hover:text-white">Проекты</a>
+        <a href="#contact" class="hover:text-white">Контакты</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold text-purple-400 animate-pulse">Telegram-боты и IT-решения под ключ</h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-300">Быстро. Надёжно. С гарантией результата.</p>
+      <a href="https://t.me/yourusername" class="mt-6 inline-block bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-purple-800">Заказать в Telegram</a>
+      <div class="mt-6 text-sm text-gray-500">Статус: <span class="text-green-400 animate-pulse">ONLINE</span></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="px-6 py-24 max-w-5xl mx-auto" data-aos="fade-up">
+      <div class="glass p-14 rounded-2xl">
+        <h2 class="text-4xl font-bold text-purple-300 mb-6">Обо мне</h2>
+        <p class="text-gray-300 text-lg leading-relaxed">Меня зовут TG DEV. Я разрабатываю кастомные Telegram-боты и IT-решения, которые автоматизируют процессы, упрощают работу и увеличивают эффективность. Более 3 лет опыта, десятки успешных запусков и довольных клиентов. Моя цель — не просто код, а решение вашей задачи.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="px-6 py-12 max-w-5xl mx-auto" data-aos="fade-up">
+      <div class="glass p-8 rounded-xl">
+        <h2 class="text-3xl font-bold text-purple-300 mb-4">Услуги</h2>
+        <ul class="grid md:grid-cols-2 gap-4 text-gray-200 list-disc list-inside">
+          <li>Разработка Telegram-ботов</li>
+          <li>Интеграции с CRM и API</li>
+          <li>Оплата и админки</li>
+          <li>Telegram Mini Apps</li>
+          <li>Парсеры и автоматизация</li>
+          <li>Поддержка и доработка</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="px-6 py-16 max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-purple-300 mb-8 text-center">Примеры проектов</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass p-6 rounded-xl tilt">
+          <h3 class="text-xl font-semibold">@example_bot</h3>
+          <p class="text-gray-400 mt-2">Автоворонка: лиды, сообщения, CRM-связка. Админка и Telegram-оповещения.</p>
+        </div>
+        <div class="glass p-6 rounded-xl tilt">
+          <h3 class="text-xl font-semibold">@another_bot</h3>
+          <p class="text-gray-400 mt-2">Парсинг объявлений по ключевым словам. Уведомления в Telegram.</p>
+        </div>
+        <div class="glass p-6 rounded-xl tilt">
+          <h3 class="text-xl font-semibold">@storebot</h3>
+          <p class="text-gray-400 mt-2">Telegram-магазин с оплатой через ЮKassa. Каталог, корзина, статистика.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-24 text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <div class="glass p-8 rounded-xl">
+        <h2 class="text-3xl font-bold text-purple-300 mb-4">Связаться</h2>
+        <p class="text-gray-400 mb-6">Готов обсудить ваш проект. Пишите в Telegram — отвечаю быстро!</p>
+        <a href="https://t.me/yourusername" class="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg">Написать в Telegram</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-800">
+      © 2025 TG DEV — Разработка Telegram-ботов и IT-решений
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 200, density: { enable: true, value_area: 800 }},
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: true, speed: 4, size_min: 0.1, sync: false }
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            random: true,
+            out_mode: "out"
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
